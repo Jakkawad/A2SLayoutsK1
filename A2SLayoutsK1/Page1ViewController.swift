@@ -23,6 +23,7 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
             //print(response.response)
             //print(response.data)
             //print(response.result)
+            //print(response.result.value)
             self.dataArray = response.result.value as! NSArray
             //print(self.dataArray.description)
             self.tableView.reloadData()
@@ -47,9 +48,9 @@ class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewD
         let imageViewProductURL = item.objectForKey("ProductShowImage") as? String
         //print(imageViewProductURL)
         
-        let categoryID = item.objectForKey("0"
-            ) as? String
-        print(categoryID)
+        let categoryID = item.objectForKey("1")
+            as? String
+        //print(categoryID)
         cell0?.imageViewProduct1.setImageWithURL(baseURL!)
         
         return cell0!
