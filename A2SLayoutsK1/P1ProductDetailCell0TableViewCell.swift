@@ -12,6 +12,7 @@ class P1ProductDetailCell0TableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageViewProduct:UIImageView!
     @IBOutlet weak var lblProductName:UILabel!
+    @IBOutlet weak var lblProductPrice:UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
