@@ -45,6 +45,10 @@ class Page1ViewController: UIViewController, UICollectionViewDataSource, UIColle
         col0?.lblCategoryName.text = item.objectForKey("CategoryName") as? String
         return col0!
     }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
