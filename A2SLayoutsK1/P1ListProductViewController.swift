@@ -14,14 +14,16 @@ class P1ListProductViewController: UIViewController, UITableViewDataSource, UITa
 
     @IBOutlet weak var tableView:UITableView!
     
-    var baseURL = NSURL(string: "http://placehold.it/170x140")
+    var dummyImage = NSURL(string: "http://placehold.it/170x140")
     
     var dataArray = NSArray()
+    var productDetail:AnyObject!
     
     func loadData() {
-        Alamofire.request(.POST, "", parameters: [""]).responseJSON { response in
+        Alamofire.request(.POST, baseURL.urlAPI, parameters: ["api":"product_categoryid", "product_categoryid":"3"]).responseJSON { response in
             self.dataArray = response.result.value as! NSArray
-            tableView.reloadData()
+            self.tableView.reloadData()
+            //print(self.dataArray.description)
         }
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -29,13 +31,31 @@ class P1ListProductViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        //return 10
+        return dataArray.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as? P1ListProductCell0TableViewCell
-        cell0?.imageViewProduct.setImageWithURL(baseURL!)
+        //cell0?.imageViewProduct.setImageWithURL(dummyImage!)
+        let item = dataArray[indexPath.row] as! NSDictionary
+        
+        cell0?.lblProductName.text = item.objectForKey("ProductName") as? String
+        cell0?.lblPrice.text = item.objectForKey("ProductPrice") as? String
+        let imageItemURL = item.objectForKey("ProductShowImage") as? String
+        let imageURL = NSURL(string: imageItemURL!)
+        cell0?.imageViewProduct.setImageWithURL(imageURL!)
         return cell0!
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var indexPath:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        if segue.identifier == "ProductDetailSegue" {
+            let DetailVC = segue.destinationViewController as! P1ProductDetailViewController
+            //DetailVC.title = dataArray[indexPath.row] as! String
+            DetailVC.productDetail = dataArray[indexPath.row] as! NSDictionary
+            //print(DetailVC.productDetail.description)
+        }
     }
     
     override func viewDidLoad() {

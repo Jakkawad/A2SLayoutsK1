@@ -28,6 +28,7 @@
 		8476BD321CE5BB0100526877 /* P1ListProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */; };
 		8476BD341CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */; };
 		8476BD361CE5CA9E00526877 /* baseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD351CE5CA9E00526877 /* baseURL.swift */; };
+		8476BD391CE5D0EA00526877 /* basePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD381CE5D0EA00526877 /* basePass.swift */; };
 		848149611CE07A92004B0BB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848149601CE07A92004B0BB2 /* AppDelegate.swift */; };
 		848149661CE07A92004B0BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848149641CE07A92004B0BB2 /* Main.storyboard */; };
 		848149681CE07A93004B0BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848149671CE07A93004B0BB2 /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 		8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ListProductViewController.swift; sourceTree = "<group>"; };
 		8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ListProductCell0TableViewCell.swift; sourceTree = "<group>"; };
 		8476BD351CE5CA9E00526877 /* baseURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseURL.swift; sourceTree = "<group>"; };
+		8476BD381CE5D0EA00526877 /* basePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = basePass.swift; sourceTree = "<group>"; };
 		8481495D1CE07A92004B0BB2 /* A2SLayoutsK1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A2SLayoutsK1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		848149601CE07A92004B0BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848149651CE07A92004B0BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,8 +92,7 @@
 				312364FD1CE5861800C3BAD1 /* Page1ProductDetail */,
 				312365011CE59F9C00C3BAD1 /* P1CategoryCollectionViewCell.swift */,
 				8476BD2F1CE5A50C00526877 /* PopOverViewController.swift */,
-				8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */,
-				8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */,
+				8476BD371CE5CCCE00526877 /* Page1ProductList */,
 			);
 			name = Page1;
 			sourceTree = "<group>";
@@ -140,6 +141,7 @@
 			children = (
 				312364F71CE5004000C3BAD1 /* baseCell.swift */,
 				8476BD351CE5CA9E00526877 /* baseURL.swift */,
+				8476BD381CE5D0EA00526877 /* basePass.swift */,
 			);
 			name = Struct;
 			sourceTree = "<group>";
@@ -175,6 +177,15 @@
 				D39E11A8D284B08D047A75E2 /* Pods-A2SLayoutsK1.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8476BD371CE5CCCE00526877 /* Page1ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */,
+				8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */,
+			);
+			name = Page1ProductList;
 			sourceTree = "<group>";
 		};
 		848149541CE07A92004B0BB2 = {
@@ -357,6 +368,7 @@
 				8476BD361CE5CA9E00526877 /* baseURL.swift in Sources */,
 				312364F11CE4D12600C3BAD1 /* Page3ViewController.swift in Sources */,
 				8476BD321CE5BB0100526877 /* P1ListProductViewController.swift in Sources */,
+				8476BD391CE5D0EA00526877 /* basePass.swift in Sources */,
 				312364E51CE3109800C3BAD1 /* P1ProductDetailViewController.swift in Sources */,
 				312364FB1CE56FC400C3BAD1 /* P1ProductDetailCell1TableViewCell.swift in Sources */,
 				312365001CE596BA00C3BAD1 /* Page2ViewController.swift in Sources */,

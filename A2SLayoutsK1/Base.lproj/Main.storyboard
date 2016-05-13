@@ -317,7 +317,7 @@
                                             <outlet property="lblPriceName" destination="gBL-5A-b12" id="pdv-0w-ouJ"/>
                                             <outlet property="lblProductName" destination="aZV-VE-rtY" id="pnO-Db-sLj"/>
                                             <outlet property="lblShipping" destination="PZO-ME-Q4a" id="W32-Xj-UeR"/>
-                                            <segue destination="ke1-23-CcE" kind="push" id="HCV-YI-E4C"/>
+                                            <segue destination="ke1-23-CcE" kind="push" identifier="ProductDetailSegue" id="HCV-YI-E4C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -338,6 +338,7 @@
                     <navigationItem key="navigationItem" id="H9D-TQ-tEV"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="jsT-43-IgR" id="M1b-Yn-NpF"/>
+                        <outlet property="tableView" destination="mHW-VU-OiZ" id="b9c-tG-zHk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVH-vs-Jhj" userLabel="First Responder" sceneMemberID="firstResponder"/>

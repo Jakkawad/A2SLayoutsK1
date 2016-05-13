@@ -14,6 +14,7 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
     @IBOutlet weak var tableView:UITableView!
     
     var baseURL = NSURL(string: "http://placehold.it/280x280")
+     var productDetail:AnyObject!
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -37,7 +38,12 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
         if indexPath.section == 0 {
             if indexPath.row == 0 {
                 let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0") as? P1ProductDetailCell0TableViewCell
-                
+                let item = productDetail as! NSDictionary
+                cell0?.lblProductName.text = item.objectForKey("ProductName") as? String
+                cell0?.lblProductPrice.text = item.objectForKey("ProductPrice") as? String
+                let imageItemURL = item.objectForKey("ProductShowImage") as? String
+                let imageURL = NSURL(string: imageItemURL!)
+                cell0?.imageViewProduct.setImageWithURL(imageURL!)
                 return cell0!
             } else if indexPath.row == 1 {
                 let cell1 = tableView.dequeueReusableCellWithIdentifier("tableCell1") as? P1ProductDetailCell1TableViewCell
@@ -81,7 +87,7 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
             }
         }
     }
-    
+    /*
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         //return "Shipping, Returns & Payments"
         if section == 0 {
@@ -90,10 +96,14 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
             return "22"
         }
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //let item = productDetail as! NSDictionary
+        //self.title = item.objectForKey("ProductName") as? String
+        //basePass.productDetailPass = productDetail as! NSDictionary
+        //print(basePass.productDetailPass)
         // Do any additional setup after loading the view.
         tableView.registerNib(UINib(nibName: "P1ProductDetailCell0TableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell0")
         tableView.registerNib(UINib(nibName: "P1ProductDetailCell1TableViewCell", bundle: nil), forCellReuseIdentifier: "tableCell1")
