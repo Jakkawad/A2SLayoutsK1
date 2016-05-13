@@ -13,7 +13,7 @@ class P1CategoryCell1TableViewCell: UITableViewCell, UICollectionViewDataSource,
 
     @IBOutlet weak var collectionView:UICollectionView!
     
-    var baseURL = NSURL(string: "http://placehold.it/125x125")
+    var baseURL = NSURL(string: "http://placehold.it/170x170")
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1

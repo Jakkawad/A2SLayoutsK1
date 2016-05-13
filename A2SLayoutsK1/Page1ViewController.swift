@@ -10,7 +10,7 @@ import UIKit
 import MapleBacon
 import Alamofire
 
-class Page1ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class Page1ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIPopoverPresentationControllerDelegate {
 
     @IBOutlet weak var collectionView:UICollectionView!
     
@@ -48,7 +48,31 @@ class Page1ViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.row)
+        //self.performSegueWithIdentifier("showView", sender: self)
+        
+        
+        
     }
+    /*
+    @IBAction func btnPopOver(sender: AnyObject) {
+        //self.performSegueWithIdentifier("showView", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showView"
+        {
+            var vc = segue.destinationViewController as! UIViewController
+            var controller = vc.popoverPresentationController
+            
+            if controller != nil {
+                controller?.delegate = self
+            }
+        }
+    }
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .None
+    }
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
 
