@@ -89,12 +89,14 @@ class P1ProductDetailViewController: UIViewController, UITableViewDataSource, UI
     }
     /*
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        //return "Shipping, Returns & Payments"
+        return "Shipping, Returns & Payments"
+        /*
         if section == 0 {
             return "11"
         } else {
             return "22"
         }
+        */
     }
     */
     override func viewDidLoad() {

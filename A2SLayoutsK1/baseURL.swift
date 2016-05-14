@@ -11,4 +11,6 @@ import Foundation
 struct baseURL {
     static var urlAPI = "https://www.all2sale.com/sendmail/testfunction/json/apitest.php"
     
+    //static var baseURL = NSURL(string: "http://placehold.it/\(x)x\(y)")
+    
 }

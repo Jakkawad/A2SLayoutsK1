@@ -41,7 +41,9 @@ class Page1ViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let col0 = collectionView.dequeueReusableCellWithReuseIdentifier("collectCell0", forIndexPath: indexPath) as? P1CategoryCollectionViewCell
         let item = dataArray[indexPath.row] as! NSDictionary
-        col0?.imageViewCategory.setImageWithURL(baseURL!)
+        let imageItemURL = item.objectForKey("ProductShowImage") as? String
+        let imageURL = NSURL(string: imageItemURL!)
+        col0?.imageViewCategory.setImageWithURL(imageURL!)
         col0?.lblCategoryName.text = item.objectForKey("CategoryName") as? String
         return col0!
     }
