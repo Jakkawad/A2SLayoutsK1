@@ -53,7 +53,7 @@ class P1ListProductViewController: UIViewController, UITableViewDataSource, UITa
         if segue.identifier == "ProductDetailSegue" {
             let DetailVC = segue.destinationViewController as! P1ProductDetailViewController
             //DetailVC.title = dataArray[indexPath.row] as! String
-            DetailVC.productDetail = dataArray[indexPath.row] as! NSDictionary
+            //DetailVC.productDetail = dataArray[indexPath.row] as! NSDictionary
             //print(DetailVC.productDetail.description)
         }
     }

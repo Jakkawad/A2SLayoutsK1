@@ -2,17 +2,16 @@
 //  P1ProductDetailCell0TableViewCell.swift
 //  A2SLayoutsK1
 //
-//  Created by Jakkawad Chaiplee on 5/11/2559 BE.
+//  Created by admin on 5/14/2559 BE.
 //  Copyright © 2559 All2Sale. All rights reserved.
 //
 
 import UIKit
 
+
 class P1ProductDetailCell0TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageViewProduct:UIImageView!
-    @IBOutlet weak var lblProductName:UILabel!
-    @IBOutlet weak var lblProductPrice:UILabel!
+    @IBOutlet weak var imageViewBanner:UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +23,5 @@ class P1ProductDetailCell0TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }
