@@ -386,6 +386,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="H9D-TQ-tEV"/>
                     <connections>
+                        <outlet property="searchBar" destination="saj-mO-Fl1" id="fHp-Q8-TDf"/>
                         <outlet property="searchDisplayController" destination="w1U-3B-gno" id="5N2-EB-aMr"/>
                         <outlet property="tableView" destination="mHW-VU-OiZ" id="b9c-tG-zHk"/>
                     </connections>

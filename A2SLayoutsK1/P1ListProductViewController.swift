@@ -10,15 +10,17 @@ import UIKit
 import Alamofire
 import MapleBacon
 
-class P1ListProductViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class P1ListProductViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate {
 
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView:UITableView!
     
-    var dummyImage = NSURL(string: "http://placehold.it/170x140")
+    var searchController = UISearchController(searchResultsController: nil)
     
     var dataArray = NSArray()
     var productDetail:AnyObject!
     
+
     func loadData() {
         Alamofire.request(.POST, baseURL.urlAPI, parameters: ["api":"product_categoryid", "product_categoryid":"3"]).responseJSON { response in
             self.dataArray = response.result.value as! NSArray
@@ -61,6 +63,10 @@ class P1ListProductViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        definesPresentationContext = true
+        tableView.tableHeaderView = searchController.searchBar
         // Do any additional setup after loading the view.
         loadData()
     }
