@@ -9,6 +9,7 @@
 import Foundation
 
 struct baseCell {
+    static var tableCellNill = "tableCellNill"
     static var tableCell0 = "tableCell0"
     static var tableCell1 = "tableCell1"
     static var tableCell2 = "tableCell2"
@@ -18,4 +19,16 @@ struct baseCell {
     static var tableCell7 = "tableCell6"
     static var tableCell8 = "tableCell7"
     static var tableCell9 = "tableCell8"
+    
+    static var collectCell0 = "collectCell0"
+    static var collectCell1 = "collectCell1"
+    static var collectCell2 = "collectCell2"
+    static var collectCell3 = "collectCell3"
+    static var collectCell4 = "collectCell4"
+    static var collectCell5 = "collectCell5"
+    static var collectCell6 = "collectCell6"
+    static var collectCell7 = "collectCell7"
+    static var collectCell8 = "collectCell8"
+    
+    
 }

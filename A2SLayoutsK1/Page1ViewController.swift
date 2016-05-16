@@ -49,7 +49,7 @@ class Page1ViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.row)
+        //print(indexPath.row)
         //self.performSegueWithIdentifier("showView", sender: self)
         
         

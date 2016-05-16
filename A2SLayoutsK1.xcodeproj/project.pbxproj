@@ -17,10 +17,13 @@
 		312364F81CE5004000C3BAD1 /* baseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312364F71CE5004000C3BAD1 /* baseCell.swift */; };
 		312365001CE596BA00C3BAD1 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312364FF1CE596BA00C3BAD1 /* Page2ViewController.swift */; };
 		312365021CE59F9C00C3BAD1 /* P1CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312365011CE59F9C00C3BAD1 /* P1CategoryCollectionViewCell.swift */; };
-		312365041CE6E41B00C3BAD1 /* urlValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312365031CE6E41B00C3BAD1 /* urlValue.swift */; };
 		312365061CE6E63C00C3BAD1 /* C0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312365051CE6E63C00C3BAD1 /* C0TableViewCell.swift */; };
 		312365081CE6E65A00C3BAD1 /* C1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312365071CE6E65A00C3BAD1 /* C1TableViewCell.swift */; };
 		3123650A1CE6E67400C3BAD1 /* C2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312365091CE6E67400C3BAD1 /* C2TableViewCell.swift */; };
+		31D0A7CE1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D0A7CD1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift */; };
+		31D0A7D01CE97A6D00BC376B /* P1ProductDetailCell3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D0A7CF1CE97A6D00BC376B /* P1ProductDetailCell3TableViewCell.swift */; };
+		31D0A7D21CE97E2400BC376B /* dummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D0A7D11CE97E2400BC376B /* dummyData.swift */; };
+		31D0A7D41CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D0A7D31CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift */; };
 		762F639A4A79BB8A5FF5EC6A /* Pods_A2SLayoutsK1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3906B3CF64A07C4DE964CB /* Pods_A2SLayoutsK1.framework */; };
 		8468F7521CE1C9F1008F08A9 /* P1CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468F7511CE1C9F1008F08A9 /* P1CategoryViewController.swift */; };
 		846B3A971CE71644000E8E5A /* P1ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846B3A961CE71644000E8E5A /* P1ProductDetailViewController.swift */; };
@@ -49,10 +52,13 @@
 		312364F71CE5004000C3BAD1 /* baseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = baseCell.swift; sourceTree = "<group>"; };
 		312364FF1CE596BA00C3BAD1 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		312365011CE59F9C00C3BAD1 /* P1CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		312365031CE6E41B00C3BAD1 /* urlValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = urlValue.swift; sourceTree = "<group>"; };
 		312365051CE6E63C00C3BAD1 /* C0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C0TableViewCell.swift; sourceTree = "<group>"; };
 		312365071CE6E65A00C3BAD1 /* C1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C1TableViewCell.swift; sourceTree = "<group>"; };
 		312365091CE6E67400C3BAD1 /* C2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = C2TableViewCell.swift; sourceTree = "<group>"; };
+		31D0A7CD1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductDetailCell0CollectionViewCell.swift; sourceTree = "<group>"; };
+		31D0A7CF1CE97A6D00BC376B /* P1ProductDetailCell3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductDetailCell3TableViewCell.swift; sourceTree = "<group>"; };
+		31D0A7D11CE97E2400BC376B /* dummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyData.swift; sourceTree = "<group>"; };
+		31D0A7D31CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductDetailCell1TableViewCell.swift; sourceTree = "<group>"; };
 		4CDBE61C70793FE1A3354EB9 /* Pods-A2SLayoutsK1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A2SLayoutsK1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-A2SLayoutsK1/Pods-A2SLayoutsK1.debug.xcconfig"; sourceTree = "<group>"; };
 		8468F7511CE1C9F1008F08A9 /* P1CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1CategoryViewController.swift; sourceTree = "<group>"; };
 		846B3A961CE71644000E8E5A /* P1ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ProductDetailViewController.swift; sourceTree = "<group>"; };
@@ -113,8 +119,7 @@
 		312364EC1CE3340A00C3BAD1 /* Function */ = {
 			isa = PBXGroup;
 			children = (
-				312364ED1CE3342900C3BAD1 /* PassData.swift */,
-				312365031CE6E41B00C3BAD1 /* urlValue.swift */,
+				31D0A7D11CE97E2400BC376B /* dummyData.swift */,
 			);
 			name = Function;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		312364F61CE4FFFB00C3BAD1 /* Struct */ = {
 			isa = PBXGroup;
 			children = (
+				312364ED1CE3342900C3BAD1 /* PassData.swift */,
 				312364F71CE5004000C3BAD1 /* baseCell.swift */,
 				8476BD351CE5CA9E00526877 /* baseURL.swift */,
 				8476BD381CE5D0EA00526877 /* basePass.swift */,
@@ -157,6 +163,9 @@
 			children = (
 				846B3A961CE71644000E8E5A /* P1ProductDetailViewController.swift */,
 				846B3A981CE716FA000E8E5A /* P1ProductDetailCell0TableViewCell.swift */,
+				31D0A7CD1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift */,
+				31D0A7CF1CE97A6D00BC376B /* P1ProductDetailCell3TableViewCell.swift */,
+				31D0A7D31CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift */,
 			);
 			name = Page1ProductDetail;
 			sourceTree = "<group>";
@@ -368,10 +377,10 @@
 				8476BD361CE5CA9E00526877 /* baseURL.swift in Sources */,
 				846B3A971CE71644000E8E5A /* P1ProductDetailViewController.swift in Sources */,
 				312364F11CE4D12600C3BAD1 /* Page3ViewController.swift in Sources */,
-				312365041CE6E41B00C3BAD1 /* urlValue.swift in Sources */,
 				312365081CE6E65A00C3BAD1 /* C1TableViewCell.swift in Sources */,
 				3123650A1CE6E67400C3BAD1 /* C2TableViewCell.swift in Sources */,
 				8476BD321CE5BB0100526877 /* P1ListProductViewController.swift in Sources */,
+				31D0A7D21CE97E2400BC376B /* dummyData.swift in Sources */,
 				8476BD391CE5D0EA00526877 /* basePass.swift in Sources */,
 				312365001CE596BA00C3BAD1 /* Page2ViewController.swift in Sources */,
 				848149751CE07B6D004B0BB2 /* Page1ViewController.swift in Sources */,
@@ -380,9 +389,12 @@
 				312364EE1CE3342900C3BAD1 /* PassData.swift in Sources */,
 				312365061CE6E63C00C3BAD1 /* C0TableViewCell.swift in Sources */,
 				312364F41CE4F8BB00C3BAD1 /* Page4ViewController.swift in Sources */,
+				31D0A7D41CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift in Sources */,
 				848149611CE07A92004B0BB2 /* AppDelegate.swift in Sources */,
+				31D0A7CE1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift in Sources */,
 				8476BD341CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift in Sources */,
 				8468F7521CE1C9F1008F08A9 /* P1CategoryViewController.swift in Sources */,
+				31D0A7D01CE97A6D00BC376B /* P1ProductDetailCell3TableViewCell.swift in Sources */,
 				312365021CE59F9C00C3BAD1 /* P1CategoryCollectionViewCell.swift in Sources */,
 				846B3A991CE716FA000E8E5A /* P1ProductDetailCell0TableViewCell.swift in Sources */,
 			);
