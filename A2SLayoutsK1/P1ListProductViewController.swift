@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import MapleBacon
 
-class P1ListProductViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate {
+class P1ListProductViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView:UITableView!
@@ -63,10 +63,7 @@ class P1ListProductViewController: UIViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
+        
         // Do any additional setup after loading the view.
         loadData()
     }
