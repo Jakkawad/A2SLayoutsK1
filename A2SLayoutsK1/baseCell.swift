@@ -30,5 +30,8 @@ struct baseCell {
     static var collectCell7 = "collectCell7"
     static var collectCell8 = "collectCell8"
     
+    static var headerCell0 = "headerCell0"
+    static var headerCell1 = "headerCell1"
+    static var headerCell2 = "headerCell2"
     
 }

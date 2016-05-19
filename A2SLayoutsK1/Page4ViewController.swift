@@ -74,10 +74,16 @@ class Page4ViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerCell0 = tableView.dequeueReusableCellWithIdentifier("headerCell0")
+        headerCell0?.textLabel?.text = "DDLL"
+        return headerCell0
+    }
+    /*
     func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return "Shipping, Returns & Payments"
     }
-    
+    */
     override func viewDidLoad() {
         super.viewDidLoad()
 
