@@ -15,7 +15,7 @@ class P5ProductDetailViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
