@@ -38,6 +38,9 @@
 		8474637D1CEDA9BD00ACC256 /* P5ListProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474637C1CEDA9BD00ACC256 /* P5ListProductViewController.swift */; };
 		847463801CEDAA4300ACC256 /* P5ProductListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8474637F1CEDAA4300ACC256 /* P5ProductListCollectionViewCell.swift */; };
 		847463821CEDB33000ACC256 /* P5ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847463811CEDB33000ACC256 /* P5ProductDetailViewController.swift */; };
+		847463851CEDC46B00ACC256 /* P5Cell3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847463841CEDC46B00ACC256 /* P5Cell3TableViewCell.swift */; };
+		847463871CEDC4BE00ACC256 /* P5Cell2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847463861CEDC4BE00ACC256 /* P5Cell2TableViewCell.swift */; };
+		847463891CEDC50100ACC256 /* P5Cell2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847463881CEDC50100ACC256 /* P5Cell2CollectionViewCell.swift */; };
 		8476BD301CE5A50C00526877 /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD2F1CE5A50C00526877 /* PopOverViewController.swift */; };
 		8476BD321CE5BB0100526877 /* P1ListProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */; };
 		8476BD341CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */; };
@@ -83,6 +86,9 @@
 		8474637C1CEDA9BD00ACC256 /* P5ListProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5ListProductViewController.swift; sourceTree = "<group>"; };
 		8474637F1CEDAA4300ACC256 /* P5ProductListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5ProductListCollectionViewCell.swift; sourceTree = "<group>"; };
 		847463811CEDB33000ACC256 /* P5ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5ProductDetailViewController.swift; sourceTree = "<group>"; };
+		847463841CEDC46B00ACC256 /* P5Cell3TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5Cell3TableViewCell.swift; sourceTree = "<group>"; };
+		847463861CEDC4BE00ACC256 /* P5Cell2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5Cell2TableViewCell.swift; sourceTree = "<group>"; };
+		847463881CEDC50100ACC256 /* P5Cell2CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P5Cell2CollectionViewCell.swift; sourceTree = "<group>"; };
 		8476BD2F1CE5A50C00526877 /* PopOverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
 		8476BD311CE5BB0100526877 /* P1ListProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ListProductViewController.swift; sourceTree = "<group>"; };
 		8476BD331CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P1ListProductCell0TableViewCell.swift; sourceTree = "<group>"; };
@@ -170,6 +176,8 @@
 				847463781CED835900ACC256 /* P5HeaderCell1TableViewCell.swift */,
 				8474637E1CEDA9D900ACC256 /* ListProduct */,
 				847463831CEDB43300ACC256 /* ProductDetail */,
+				847463841CEDC46B00ACC256 /* P5Cell3TableViewCell.swift */,
+				8474638A1CEDC51100ACC256 /* Cell2 */,
 			);
 			name = Page5;
 			sourceTree = "<group>";
@@ -251,6 +259,15 @@
 				847463811CEDB33000ACC256 /* P5ProductDetailViewController.swift */,
 			);
 			name = ProductDetail;
+			sourceTree = "<group>";
+		};
+		8474638A1CEDC51100ACC256 /* Cell2 */ = {
+			isa = PBXGroup;
+			children = (
+				847463861CEDC4BE00ACC256 /* P5Cell2TableViewCell.swift */,
+				847463881CEDC50100ACC256 /* P5Cell2CollectionViewCell.swift */,
+			);
+			name = Cell2;
 			sourceTree = "<group>";
 		};
 		8476BD371CE5CCCE00526877 /* Page1ProductList */ = {
@@ -436,10 +453,12 @@
 				847463751CED831A00ACC256 /* P5Cell1TableViewCell.swift in Sources */,
 				8476BD301CE5A50C00526877 /* PopOverViewController.swift in Sources */,
 				312364DE1CE2E95600C3BAD1 /* P1CategoryCell0TableViewCell.swift in Sources */,
+				847463871CEDC4BE00ACC256 /* P5Cell2TableViewCell.swift in Sources */,
 				312364E31CE2FB3600C3BAD1 /* P1CategoryCol0CollectionViewCell.swift in Sources */,
 				8476BD361CE5CA9E00526877 /* baseURL.swift in Sources */,
 				847463791CED835900ACC256 /* P5HeaderCell1TableViewCell.swift in Sources */,
 				846B3A971CE71644000E8E5A /* P1ProductDetailViewController.swift in Sources */,
+				847463891CEDC50100ACC256 /* P5Cell2CollectionViewCell.swift in Sources */,
 				312364F11CE4D12600C3BAD1 /* Page3ViewController.swift in Sources */,
 				847463731CED6DF800ACC256 /* P5HeaderCell0TableViewCell.swift in Sources */,
 				312365081CE6E65A00C3BAD1 /* C1TableViewCell.swift in Sources */,
@@ -461,6 +480,7 @@
 				31D0A7D41CE97EE300BC376B /* P1ProductDetailCell1TableViewCell.swift in Sources */,
 				847463771CED833000ACC256 /* P5Cell1CollectionViewCell.swift in Sources */,
 				848149611CE07A92004B0BB2 /* AppDelegate.swift in Sources */,
+				847463851CEDC46B00ACC256 /* P5Cell3TableViewCell.swift in Sources */,
 				8474636D1CED67FF00ACC256 /* Page5ViewController.swift in Sources */,
 				31D0A7CE1CE970FB00BC376B /* P1ProductDetailCell0CollectionViewCell.swift in Sources */,
 				8476BD341CE5BBA300526877 /* P1ListProductCell0TableViewCell.swift in Sources */,
