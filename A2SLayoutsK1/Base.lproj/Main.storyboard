@@ -853,10 +853,10 @@
             </objects>
             <point key="canvasLocation" x="1924" y="3612"/>
         </scene>
-        <!--View Controller-->
+        <!--Page5 View Controller-->
         <scene sceneID="Uji-D1-DVq">
             <objects>
-                <viewController id="6fg-32-f6R" sceneMemberID="viewController">
+                <viewController id="6fg-32-f6R" customClass="Page5ViewController" customModule="A2SLayoutsK1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mig-46-y8i"/>
                         <viewControllerLayoutGuide type="bottom" id="zop-0y-udV"/>
